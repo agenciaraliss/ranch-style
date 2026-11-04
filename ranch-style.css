@@ -543,3 +543,6 @@ section:has(.products-section-title) .swiper-wrapper{align-items:stretch!importa
 /* iOS: o tema Recife põe form-control-ios (width 133% + scale .75) nos campos — no iPhone o campo encolhia */
 input.form-control-ios,.form-control-ios{transform:none!important;width:100%!important;font-size:16px!important}
 @media(max-width:575px){.rs-ft-nl .newsletter-form>div,.rs-ft-nl .form-group,.rs-ft-nl input.form-control,.rs-ft-nl input.btn{width:100%!important;max-width:none!important}}
+input.form-control-ios,.form-control-ios{margin:0!important;max-height:none!important}
+.rs-ft-nl input.form-control,.rs-ft-nl input.form-control.form-control-ios{height:50px!important;min-height:50px!important;margin:0!important}
+@media(max-width:575px){.rs-ft-nl .newsletter-form{gap:12px!important}.rs-ft-nl .newsletter-form>div{margin:0!important;height:auto!important}.rs-ft-nl .newsletter-form .col-md-auto{margin-top:0!important}}
