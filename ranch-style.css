@@ -546,3 +546,10 @@ input.form-control-ios,.form-control-ios{transform:none!important;width:100%!imp
 input.form-control-ios,.form-control-ios{margin:0!important;max-height:none!important}
 .rs-ft-nl input.form-control,.rs-ft-nl input.form-control.form-control-ios{height:50px!important;min-height:50px!important;margin:0!important}
 @media(max-width:575px){.rs-ft-nl .newsletter-form{gap:12px!important}.rs-ft-nl .newsletter-form>div{margin:0!important;height:auto!important}.rs-ft-nl .newsletter-form .col-md-auto{margin-top:0!important}}
+/* preço na mesma fonte do Pix */
+.js-item-product .item-price,#single-product .js-price-display,.rs-row-p,.rs-tot b,.rs-m-res .pr{font-family:var(--body-font)!important;letter-spacing:-.01em!important}
+.js-item-product .item-price{font-weight:700!important;font-size:21px!important}
+#single-product .js-price-display{font-weight:700!important;font-size:30px!important}
+.rs-row-p{font-weight:700!important;font-size:19px!important}
+.rs-tot b{font-weight:700!important;font-size:26px!important}
+@media(max-width:767px){.js-item-product .item-price{font-size:17px!important}#single-product .js-price-display{font-size:25px!important}}
