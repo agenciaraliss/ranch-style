@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Bevan&family=Montserrat:wght@400;500;600;700;800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Montserrat:wght@400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Jost:wght@300;400;500;600&display=swap');
 /* rs-h3-css */
@@ -553,3 +554,69 @@ input.form-control-ios,.form-control-ios{margin:0!important;max-height:none!impo
 .rs-row-p{font-weight:700!important;font-size:19px!important}
 .rs-tot b{font-weight:700!important;font-size:26px!important}
 @media(max-width:767px){.js-item-product .item-price{font-size:17px!important}#single-product .js-price-display{font-size:25px!important}}
+/* ===== v2 — pedido da cliente (preto e branco + vinho, country clássico) ===== */
+:root{
+ --main-categories-background:#ffffff!important;
+ --featured-background:#ffffff!important;
+ --new-background:#ffffff!important;
+ --brands-background:#ffffff!important;
+ --heading-font:"Bevan",Georgia,serif!important;
+ --body-font:"Montserrat",Arial,sans-serif!important;
+ --main-background:#ffffff!important;
+ --main-foreground:#141414!important;
+ --header-background:#ffffff!important;
+ --header-foreground:#141414!important;
+ --nav-desktop-background:#ffffff!important;
+ --nav-desktop-foreground:#141414!important;
+ --main-categories-foreground:#141414!important;
+ --featured-foreground:#141414!important;
+ --new-foreground:#141414!important;
+}
+body{background:#fff!important;color:#141414}
+/* títulos: serifa de laje forte, caixa alta, cara de placa western clássica */
+[data-store^="home-"] .section-title,.products-section-title,#single-product .js-product-name,.rs-lk-h h2{font-family:var(--heading-font)!important;font-weight:700!important;letter-spacing:.06em!important}
+[data-store="home-products-new"] .section-title{color:#fff!important}
+/* menu e rótulos mais firmes */
+.rs-nav-link{font-weight:700!important;letter-spacing:.14em!important;color:#141414!important}
+.rs-nav-item:hover .rs-nav-link,.rs-nav-item.is-open .rs-nav-link,.rs-nav-link.is-promo{color:var(--button-background)!important}
+.rs-b-t{color:#141414!important}
+/* preço: encorpado, moderno e em destaque */
+.js-item-product .item-price,#single-product .js-price-display,.rs-row-p,.rs-tot b,.rs-m-res .pr{font-family:var(--body-font)!important;font-weight:800!important;letter-spacing:-.02em!important;color:var(--button-background)!important}
+.js-item-product .item-price{font-size:22px!important}
+#single-product .js-price-display{font-size:32px!important}
+@media(max-width:767px){.js-item-product .item-price{font-size:18px!important}#single-product .js-price-display{font-size:26px!important}}
+/* nome do produto mais forte */
+.js-item-product .item-name{font-weight:700!important;color:#141414!important}
+/* botões vinho sólido, sem degradê */
+.js-item-product .item-actions .btn,#single-product .js-addtocart.btn,.rs-add,.rs-sf button,.rs-bag,.rs-btn{background-image:none!important;background-color:var(--button-background)!important}
+#single-product .js-addtocart.btn{background:var(--button-background) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 26 26' fill='none' stroke='%23fff' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M5 10.5h16l-1.2 10.8a1.4 1.4 0 0 1-1.4 1.2H7.6a1.4 1.4 0 0 1-1.4-1.2z'/%3E%3Cpath d='M8.6 10.5 8.2 8.4a4.8 4.8 0 1 1 9.6 0l-.4 2.1'/%3E%3C/svg%3E") calc(50% - 64px) 50%/19px no-repeat!important}
+/* sem ferradura na lupa, conta e menu (fica só na faixa informativa) */
+.rs-b-ic .rs-shoe,.rs-m-k svg{display:none!important}
+
+/* setas nativas do carrossel de categorias */
+.js-swiper-categories-prev,.js-swiper-categories-next{display:none!important}
+/* ===== v3 — sem ferraduras decorativas (categorias, look, drawer) ===== */
+.rs-cat-s,.rs-lk-h .k svg,.rs-lk-s h3 svg,.rs-dr-hi svg{display:none!important}
+/* ===== v4 — placeholder neutro (sem marrom) ===== */
+.placeholder-color{background-color:#ececec!important}
+/* ===== v5 — títulos Bevan (western elegante) + preço Montserrat ===== */
+[data-store^="home-"] .section-title,.products-section-title,.rs-lk-h h2{font-family:"Bevan",Georgia,serif!important;font-weight:400!important;font-size:30px!important;letter-spacing:.04em!important;text-transform:uppercase}
+#single-product .js-product-name{font-family:"Bevan",Georgia,serif!important;font-weight:400!important;font-size:24px!important;letter-spacing:.02em!important}
+@media(max-width:767px){[data-store^="home-"] .section-title,.products-section-title,.rs-lk-h h2{font-size:22px!important}}
+.js-item-product .item-price,#single-product .js-price-display,.rs-row-p,.rs-tot b,.rs-m-res .pr{font-family:"Montserrat",Arial,sans-serif!important;font-weight:800!important}
+/* faixa informativa: cor original, não mexer */
+[data-store="banner-services"]{background:color-mix(in srgb,#542f20 6%,#faf8f3)!important}
+/* ===== v6 — busca grande com moldura (estilo Legado) ===== */
+@media(min-width:768px){
+.rs-b[data-a=search]{position:relative;width:400px;height:48px;padding:0!important;gap:0!important;justify-content:space-between!important;background:color-mix(in srgb,var(--button-background) 3%,#fff)!important;border:1px solid color-mix(in srgb,var(--button-background) 45%,transparent)!important;border-radius:0!important;cursor:text;overflow:visible}
+.rs-b[data-a=search]:before,.rs-b[data-a=search]:after{content:"";position:absolute;width:12px;height:12px;pointer-events:none}
+.rs-b[data-a=search]:before{top:-5px;left:-5px;border-top:1.5px solid var(--button-background);border-left:1.5px solid var(--button-background)}
+.rs-b[data-a=search]:after{bottom:-5px;right:-5px;border-bottom:1.5px solid var(--button-background);border-right:1.5px solid var(--button-background)}
+.rs-b[data-a=search] .rs-b-t{order:1;flex:1;padding-left:16px;text-align:left;font:600 11px/1 var(--body-font)!important;letter-spacing:.16em!important;text-transform:uppercase!important;color:color-mix(in srgb,#141414 45%,#fff)!important}
+.rs-b[data-a=search] .rs-b-ic{order:2;width:50px!important;height:46px!important;display:flex!important;align-items:center;justify-content:center;background:color-mix(in srgb,var(--button-background) 9%,#fff);border-left:1px solid color-mix(in srgb,var(--button-background) 30%,transparent)}
+.rs-b[data-a=search] .rs-b-ic>svg{width:19px!important;height:19px!important;color:var(--button-background)!important}
+.rs-b[data-a=search]:hover{border-color:var(--button-background)!important}
+.rs-b[data-a=search]:hover .rs-b-ic{background:var(--button-background)}
+.rs-b[data-a=search]:hover .rs-b-ic>svg{color:#fff!important;transform:none}
+.rs-b[data-a=search] .rs-b-t{font-size:0!important}
+.rs-b[data-a=search] .rs-b-t:after{content:"O que você está buscando?";font-size:11px}}
