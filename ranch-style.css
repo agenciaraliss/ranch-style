@@ -620,3 +620,10 @@ body{background:#fff!important;color:#141414}
 .rs-b[data-a=search]:hover .rs-b-ic>svg{color:#fff!important;transform:none}
 .rs-b[data-a=search] .rs-b-t{font-size:0!important}
 .rs-b[data-a=search] .rs-b-t:after{content:"O que você está buscando?";font-size:11px}}
+
+/* ===== v7 — reserva o espaço do que o script monta (sem pulo ao abrir o site) ===== */
+[data-store="home-categories-featured"]:has(.js-swiper-categories .swiper-slide)>.container:not(:has(.rs-cats))::after{content:"";display:block;height:298px}
+@media(max-width:767px){[data-store="home-categories-featured"]:has(.js-swiper-categories .swiper-slide)>.container:not(:has(.rs-cats))::after{height:216px}}
+@media(min-width:768px){header .head-nav:not(:has(.rs-nav)){min-height:45px}}
+.rs-cats,.rs-nav,.rs-actions{animation:rsIn .4s ease both}
+@keyframes rsIn{from{opacity:0}to{opacity:1}}
